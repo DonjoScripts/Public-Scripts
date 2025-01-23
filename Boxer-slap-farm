@@ -1,3 +1,10 @@
+if game.PlaceId == 7234087065 then
+		firetouchinterest(game:GetService("Workspace").Buildings.house.TP, game.Players.LocalPlayer.Character.Torso, 1)
+		firetouchinterest(game:GetService("Workspace").Buildings.house.TP, game.Players.LocalPlayer.Character.Torso, 0)
+		wait(2)
+		fireclickdetector(workspace.BoxingGloves.ClickDetector)
+return
+end
 
 local function swait()
 	game:GetService("RunService").Stepped:wait()
@@ -14,14 +21,7 @@ local function PlrHasGlove(Name)
 end
 
 if not PlrHasGlove("Boxer") then
-	if game.PlaceId == 7234087065 then
-		firetouchinterest(game:GetService("Workspace").Buildings.house.TP, game.Players.LocalPlayer.Character.Torso, 1)
-		firetouchinterest(game:GetService("Workspace").Buildings.house.TP, game.Players.LocalPlayer.Character.Torso, 0)
-		wait(.5)
-		fireclickdetector(workspace.BoxingGloves.ClickDetector)
-	else
 		game:GetService("TeleportService"):Teleport(7234087065)
-	end
 	return 
 end
 
@@ -56,4 +56,3 @@ end
 			end
 		end
 	end)
-

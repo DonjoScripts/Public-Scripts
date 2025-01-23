@@ -27,7 +27,7 @@ end
 
 
 
-	if not game.Players.LocalPlayer.leaderstats.Glove.Value == "Boxer" then
+	if game.Players.LocalPlayer.leaderstats.Glove.Value ~= "Boxer" then
 		fireclickdetector(Lobby.Boxer.ClickDetector)
 	end
 	
